@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-gateway-service
+  cloud:
+    config:
+      uri: http://localhost:8068
+      name: spring-gateway-service
+      profile: dev
+      label: master
+    loadbalancer:
+      ribbon:
+        enabled: false

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="EurekaServer" />
+        <module name="Ticket" />
+        <module name="FilmService" />
+        <module name="SpringCloudConfigServer" />
+        <module name="Gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="EurekaServer" target="11" />
+      <module name="FilmService" target="11" />
+      <module name="Gateway" target="11" />
+      <module name="SpringCloudConfigServer" target="11" />
+      <module name="Ticket" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="EurekaServer" options="-parameters" />
+      <module name="FilmService" options="-parameters" />
+      <module name="Gateway" options="-parameters" />
+      <module name="SpringCloudConfigServer" options="-parameters" />
+      <module name="Ticket" options="-parameters" />
+    </option>
+  </component>
+</project>
